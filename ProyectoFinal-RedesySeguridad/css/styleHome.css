@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Super mega importante ahorra dolores de cabeza: Hace que se respete el width */
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    background-image: url(/img/background-header.jpg);
+    /*linear-gradient(red,blue))*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section {
+    padding: 80px 0 80px 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: dodgerblue;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top 10px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.promos {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+}
+
+.btn-full {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color: dodgerblue;
+    transition: .2s;
+    color: #fff;
+    transform: scale(1.07);
+}
+
+.btn-marco {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-marco:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    transition: .5s;
+    transform: scale(1.07);
+}
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+    /* 0 auto es un truquito para poner cualquier cosa en el centro */
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    padding-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+.description {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 auto;
+    /* pa centrar  */
+    margin-bottom: 15px;
+}
+
+.box {
+    padding: 1px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.box i {
+    font-size: 240%;
+    color: #e67e22;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.escaparate-comida {
+    text-decoration: none;
+    width: 100%;
+}
+
+.escaparate-comida li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.section-escaparate {
+    padding-top: 0;
+    margin-bottom: 499px;
+}
+
+.step {
+    margin-bottom: 50px;
+}
+
+.step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 150%;
+    line-height: 50px;
+    float: left;
+    margin-right: 25px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix-after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+footer {
+    background-color: #333;
+    color: aliceblue;
+    padding-top: 15px;
+}
+
+footer: link {
+    color: aliceblue;
+}
+
+.footer-nav {
+    float: left;
+    font-size: 14px;
+}
+
+.footer-links {
+    float: right;
+}
+
+.footer-nav li,
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer-links li a:link,
+.footer-links li a:visited {
+    color: #888;
+    text-decoration: none;
+}
+
+.final-text {
+    color: gray;
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 9px;
+    padding-top: 15px;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: dodgerblue;
+}
+
+.footer-links li a:hover,
+.footer-links li a:active {
+    color: dodgerblue;
+}
+
+.footer-links li a {
+    font-size: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 10px dodgerblue;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: dodgerblue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
